@@ -1,0 +1,21 @@
+ul{
+  list-style: none;
+}
+
+.listed-tag{
+  color: white;
+  margin: .5rem 0;
+  padding: .5rem;
+  background-color: black;
+  max-width: fit-content;
+}
+
+.listed-tag:hover{
+  background-color: blueviolet;
+  user-select: none;
+  cursor: pointer;
+}
+
+.listed-tag:active{
+  background-color: #480887;
+}

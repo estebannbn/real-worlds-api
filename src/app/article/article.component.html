@@ -1,0 +1,16 @@
+<div class="articles-container">
+  <h3><b>TITULO: </b> {{article.title.slice(0,100)}}</h3>
+  <h3><b>DESCRIPCION: </b> {{article.description.slice(0,200)}}</h3>
+  <h3><b>BODY: </b> {{article.body.slice(0,200)}}</h3>
+  <h3><b>FECHA DE CREACION: </b>{{article.createdAt | date}}</h3>
+  <div class="article-taglist">
+    <h3><b>TAGS</b></h3>
+    <ul>
+      <li
+        class="listed-tag"
+        *ngFor="let tag of article.tagList">
+        {{tag}}
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<h1>Real World API</h1>
+<div>
+  <h2>Tags:</h2>
+  <ul>
+    <li
+      class="listed-tag"
+      *ngFor="let tag of tagList"
+      (click)="onSelectTag(tag)"
+    >
+      {{tag}}
+    </li>
+  </ul>
+  <div *ngIf="selectedTag">
+    <p>Tag seleccionado: {{selectedTag}}</p>
+    <ul>
+      <li *ngFor="let article of articlesByTag">
+        <app-article [article]="article"></app-article>
+      </li>
+    </ul>
+  </div>
+</div>

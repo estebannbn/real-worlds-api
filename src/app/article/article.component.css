@@ -1,0 +1,41 @@
+ul{
+  list-style-type: none;
+}
+
+h3{
+  font-family: Verdana;
+  background-color: black;
+  color: #dedede;
+  padding: .5rem;
+  margin: .5rem 0 0;
+}
+
+h3:last-of-type{
+  margin-bottom: .5rem;
+}
+
+.articles-container{
+  display: flex;
+  flex-flow: column;
+  max-width: fit-content;
+  border-radius: 5px;
+  background-color: #67c9c3;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+.article-taglist{
+  background-color: black;
+  color: #dedede;
+  margin-bottom: .5rem;
+}
+
+.listed-tag{
+  font-family: Verdana;
+  font-size: 16px;
+  margin: .5rem 0 0;
+}
+
+.listed-tag:last-of-type{
+  margin-bottom: .5rem;
+}
