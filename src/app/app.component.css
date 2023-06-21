@@ -8,6 +8,7 @@ ul{
   padding: .5rem;
   background-color: black;
   max-width: fit-content;
+  min-width: 6vw;
 }
 
 .listed-tag:hover{
@@ -18,4 +19,23 @@ ul{
 
 .listed-tag:active{
   background-color: #480887;
+}
+
+.delete-button{
+  background-color: #e32b03;
+  color: #efefef;
+  margin: 0 3rem;
+  font-size: 16px;
+  font-family: Verdana;
+  border: none;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.delete-button:hover{
+  background-color: #ce2c08;
+}
+
+.delete-button:active{
+  background-color: #b22506;
 }

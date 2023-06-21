@@ -8,6 +8,7 @@ import {Article} from "./interfaces/article";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit{
   tagList!: any[];
   selectedTag!: string;
@@ -35,6 +36,11 @@ export class AppComponent implements OnInit{
       this.articlesByTag = res.articles.length >= 5 ? res.articles.slice(0,5) : res.articles
       console.log(this.articlesByTag)
     })
-
   }
+
+  deleteSelectedTag(){
+    this.selectedTag = ''
+    this.articlesByTag = []
+  }
+
 }
