@@ -11,7 +11,8 @@
     </li>
   </ul>
   <div *ngIf="selectedTag">
-    <p>Tag seleccionado: {{selectedTag}}</p>
+    <h2>Tag seleccionado: {{selectedTag}}</h2>
+    <button class="delete-button" (click)="deleteSelectedTag()">Eliminar</button>
     <ul>
       <li *ngFor="let article of articlesByTag">
         <app-article [article]="article"></app-article>
